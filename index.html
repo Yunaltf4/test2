@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/form.css">
+</head>
+
+<body>
+    <form action="">
+        <!--
+            exemple 1
+
+            input type="tel">
+            <input type="radio">
+            <input type="checkbox">
+            <input type="email" required>
+            <input type="number" required min = "0" max="125">
+            <input type="submit"-->
+        <!--fieldset>
+            
+            expemple 2
+
+            <legend>Text</legend>
+            <laber>Nom:<input type="text"></laber>
+            <fieldset>
+                <laber>Tel:<input type="radio" name="groupe"></laber>
+                <laber>Adresse:<input type="radio" name="groupe"></laber>
+            </fieldset>
+            <laber>Etude:<input type="text"></laber>
+            <laber>etc...<input type="text"></laber>
+        </fieldset-->
+
+
+
+        <fieldset class="colonne">
+            <label >Nom:<input type="text"></label>
+            <label >Prenom:<input type="text"></label>
+            <label >Courielle:<input type="email"></label>
+            <label >Age<input type="number"></label>
+            <label >Tel:<input type="tel"></label>
+            <label >Adresse Web:<input type="text"></label>
+        </fieldset>
+        <fieldset class="colonne">
+            <fieldset>
+                <legend>
+                    Votre vote:
+                </legend>
+                <label ><input type="radio" name="vote">bleu</label>
+                <label ><input type="radio" name="vote">blanc</label>
+                <label ><input type="radio" name="vote">rouge</label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Vos options:
+                </legend>
+                <label><input type="checkbox">choix1</label>
+                <label><input type="checkbox">choix2</label>
+                <label><input type="checkbox">choix3</label>
+            </fieldset>
+        </fieldset>
+
+        <fieldset id = "boutons">
+            <input type="reset" value="Vider">
+            <input type="submit" value="Envoyer">
+        </fieldset>
+    </form>
+</body>
+
+</html>
